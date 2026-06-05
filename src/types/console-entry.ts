@@ -1,11 +1,11 @@
 export interface ConsoleEntry {
   workspace: Workspace;
-  workspaces: Workspace[];
+  workspaces?: Workspace[];
   workspaceUser: WorkspaceUser;
   orgs: Organization[];
 }
 
-interface Workspace {
+export interface Workspace {
   id: string;
   key: string;
   name: string;
